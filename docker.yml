@@ -34,7 +34,7 @@
     - name: Install Docker
       package:
         name: docker-ce
-        optie: --allowerasing
+        optie: allowerasing
         state: present
       become: yes
       

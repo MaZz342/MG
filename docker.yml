@@ -29,6 +29,12 @@
         option: enabled
         value: 0
       become: yes
+    - name: uninstall buildah
+      yum: 
+        name: buildah
+        state: absent 
+
+    
     - name: install containerd.io
       package:
         name: containerd.io

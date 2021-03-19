@@ -30,12 +30,12 @@
         value: 0
       become: yes
     - name: install containerd.io
-      package: containerd.io
-    
+      package:
+        name: containerd.io
+        state: latest
     - name: Install Docker
       package:
         name: docker-ce
-        autoremove: absent 
         state: present
       become: yes
       

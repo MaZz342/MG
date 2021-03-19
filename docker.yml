@@ -29,7 +29,11 @@
         option: enabled
         value: 0
       become: yes
-
+    - name: install containerd.io
+      package:
+        name: containerd.io
+        state: present
+    
     - name: Install Docker
       package:
         name: docker-ce

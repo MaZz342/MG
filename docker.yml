@@ -42,5 +42,8 @@
         state: started
         enabled: yes
       become: yes
+    
+    - name: installing docker SDK
+      command: "pip3 install docker"
 
     

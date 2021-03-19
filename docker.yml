@@ -29,6 +29,11 @@
         option: enabled
         value: 0
       become: yes
+    - name: uninstall podman
+      yum:
+        name: podman
+        state: absent
+        
     - name: uninstall buildah
       yum: 
         name: buildah

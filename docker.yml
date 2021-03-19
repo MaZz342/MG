@@ -34,7 +34,6 @@
     - name: Install Docker
       package:
         name: docker-ce
-        optie: autoremove
         state: present
       become: yes
       
